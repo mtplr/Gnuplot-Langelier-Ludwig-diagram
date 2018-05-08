@@ -5,7 +5,7 @@
 #  
 #  Matteo Paolieri (c) - 2017
 
-# xy = columns 1,2 = HCO3^2- (x) and Na+K (y) 
+# xy = columns 1,2 = HCO3^- (x) and Na+K (y) 
 # x2y2 = columns 3,4 = SO4^2- (x2) and Ca+Mg (y2)
 
 
