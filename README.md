@@ -10,3 +10,5 @@ Generate a Langelier-Ludwig graph using GNUPLOT.
 
 The command `plot 'data.txt' u 1:2 axes x1y1 w p pt 7, '' u 3:4 axes x2y2 w p pt 7` means: plot the columns 1(x) and 2(y) from 'data.txt' on the axes x1 and y1 and columns 3 (x) and 4 (y) for x2 and y2 axis with points and style number 7. 
 You can add how many columns you want, and plot data as you like, modding that line. That is just a starting point because I didn't find anything on the web. 
+
+![alt text](LL-Graph.png)
