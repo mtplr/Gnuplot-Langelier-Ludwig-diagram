@@ -1,5 +1,5 @@
-# Gnuplot Langelier-Ludwig graph generator
-Generate a Langelier-Ludwig graph using GNUPLOT. 
+# Gnuplot Langelier-Ludwig graph diagram
+Generate a Langelier-Ludwig diagram using GNUPLOT. 
 
 ## How-to
 
