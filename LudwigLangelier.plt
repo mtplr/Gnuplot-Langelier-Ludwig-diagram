@@ -27,4 +27,4 @@ set y2range [50:0]
 
 unset key 
 
-plot 'data.txt' u 1:2 axes x1y1 w p pt 7, '' u 3:4 axes x2y2 w p pt 7
+plot 'data.txt' u 1:2 axes x1y1 w p pt 29, '' u 3:4 axes x2y2 w p pt 29
