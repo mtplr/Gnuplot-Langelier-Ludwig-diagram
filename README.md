@@ -1,6 +1,6 @@
 # Gnuplot Template – Langelier-Ludwig Diagram
 
-(c) 2018 Matteo Paolieri - University of Florence
+(c) 2017 Matteo Paolieri - University of Florence
 
 This Gnuplot script generates a **Langelier-Ludwig diagram**, a graphical representation used in water chemistry to assess whether a water sample is **corrosive**, **scaling**, or **balanced** with respect to **calcium carbonate (CaCO₃) saturation**.
 
