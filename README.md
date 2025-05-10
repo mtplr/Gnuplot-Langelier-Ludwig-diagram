@@ -1,18 +1,42 @@
-# Gnuplot Langelier-Ludwig graph diagram
-Generate a Langelier-Ludwig diagram using GNUPLOT. 
+# Gnuplot Template – Langelier-Ludwig Diagram
 
-## How-to
+(c) 2018 Matteo Paolieri - University of Florence
 
-1. Put data into `data.txt`. First two columns are for Bicarbonates and Na+K; second two are for SO_4^2- and Ca+Mg.
-2. Start the LudwigLangelier.plt script and get the output plot as `LL-graph.png`.
+This Gnuplot script generates a **Langelier-Ludwig diagram**, a graphical representation used in water chemistry to assess whether a water sample is **corrosive**, **scaling**, or **balanced** with respect to **calcium carbonate (CaCO₃) saturation**.
+
+This type of diagram is a powerful visualization tool derived from the **Langelier Saturation Index (LSI)**. It helps interpret how water chemistry parameters like **alkalinity**, **pH**, and **hardness** interact to predict whether water will **deposit scale** or **corrode metal surfaces**.
+
+## How to Use
+
+1. Prepare your input data in `data.txt`.
+    - **Columns 1 & 2** → Bicarbonates vs. Na⁺ + K⁺ (to be plotted on x1y1 axes)
+    - **Columns 3 & 4** → SO₄²⁻ vs. Ca²⁺ + Mg²⁺ (to be plotted on x2y2 axes)
+
+2. Run the Gnuplot script:
+
+   ```bash
+   gnuplot LudwigLangelier.plt
+   ```
+
+3. The output graph will be saved as `LL-Graph.png`.
 
 ## Notes
 
-The command `plot 'data.txt' u 1:2 axes x1y1 w p pt 7, '' u 3:4 axes x2y2 w p pt 7` means: plot the columns 1(x) and 2(y) from 'data.txt' on the axes x1 and y1 and columns 3(x) and 4(y) for x2 and y2 axis with points and style number 7. 
+The default Gnuplot command in the script:
 
-You can add how many columns you want, and plot data as you like: just mod that line. 
-That is just a starting point because I didn't find anything on the web. 
+```gnuplot
+plot 'data.txt' u 1:2 axes x1y1 w p pt 7, '' u 3:4 axes x2y2 w p pt 7
+```
 
-## Output sample
+This means:
+- Plot columns 1 (x) and 2 (y) from `data.txt` using the **x1y1** axes.
+- Then plot columns 3 (x) and 4 (y) using the **x2y2** axes.
+- Use **point style 7** for both sets.
 
-![alt text](LL-Graph.png)
+You are free to modify this line to fit your data. The template is designed to be flexible and can be extended to accommodate additional dimensions or custom styles.
+
+This repository was created because no reusable Langelier-Ludwig diagram script was readily available online. Consider this a starting point for your own analyses or academic work.
+
+## Example Output
+
+![Langelier-Ludwig Graph Example](LL-Graph.png)
